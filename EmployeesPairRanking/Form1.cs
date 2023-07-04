@@ -13,9 +13,9 @@ namespace EmployeesPairRanking
 
         private void btnSelectFile_Click(object sender, EventArgs e)
         {
-            // Show the dialog and get result.
+            // Show the dialog and get file selected
             DialogResult result = this.dlgSelectFile.ShowDialog();
-            if (result == DialogResult.OK) // Test result.
+            if (result == DialogResult.OK) 
             {
                 // clear the grid and info labels
                 this.lblCommonProjects.Text = string.Empty;

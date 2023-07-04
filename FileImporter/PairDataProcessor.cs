@@ -71,23 +71,11 @@ namespace DataProcessor
                 .OrderByDescending(r => r.DaysWorked)
                 .First();
 
-
                 // get data for the selected pair in order to disply it
                 topPairData = distinctEmployeesPairs
                     .Where(p => p.EmployeeID1 == finalResult.EmployeeID1 && p.EmployeeID2 == finalResult.EmployeeID2)
                     .OrderByDescending(r => r.DaysWorked)
                     .ToList();
-
-                //var grouped_teachers = teachers
-                //    .GroupBy(t => new { t.subject, t.age })
-                //    .Select(g => new
-                //    {
-                //        subject = g.Key.subject,
-                //        age = g.Key.age,
-                //        count = g.Count(), //number of teachers in the group
-                //        names = string.Join(", ", g.Select(t => t.name)) // teacher names
-                //    });
-
             }
             catch (Exception ex)
             {
