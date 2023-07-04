@@ -17,6 +17,13 @@ namespace EmployeesPairRanking
             DialogResult result = this.dlgSelectFile.ShowDialog();
             if (result == DialogResult.OK) // Test result.
             {
+                // clear the grid and info labels
+                this.lblCommonProjects.Text = string.Empty;
+                this.lblResult.Text = string.Empty;
+                this.lblCommonProjects.Visible = true;
+                this.dgEmployyesPairRanking.DataSource = null;
+                dgEmployyesPairRanking.Columns.Clear();
+
                 this.lblSelectedFile.Text = $"Selected file: {dlgSelectFile.FileName}";
                 this.lblSelectedFile.Visible = true;
 
