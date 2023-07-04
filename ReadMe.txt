@@ -4,7 +4,7 @@
 
 	Note that they are ALWAYS copied to the output directory so that they can be selected from the file selection dialog.
 
-	They are located in the following local subdirectory after the solution has been taken from git:
+	They are located in the following local subdirectory after the solution has been taken from github:
 
 	 \damian-boukliev-employees\EmployeesPairRanking\bin\Debug\net6.0-windows\TestData
 
