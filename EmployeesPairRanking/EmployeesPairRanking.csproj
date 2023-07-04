@@ -12,4 +12,19 @@
     <ProjectReference Include="..\FileImporter\DataProcessor.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="TestData\EmployeesData1.CSV">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\EmployeesData2.CSV">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\EmployeesData3.CSV">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\EmployeesData4.CSV">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
